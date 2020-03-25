@@ -16,6 +16,10 @@ class Pots
       Serial.println(potVal);
     }
 };
+
+Pots pot1(A0);
+Pots pot2(A1);
+
 void setup()
 {
 	Serial.begin(9600);
@@ -23,8 +27,7 @@ void setup()
 
 void loop()
 {
- 	Pots pot1(A0);
-  	Pots pot2(A1);
+ 	
   	pot1.analogReading();
   	pot2.analogReading();
 }
